@@ -1,0 +1,86 @@
+/* --- Contact Section --- */
+.contact-section {
+  background: rgba(24,24,24,0.95);
+  
+  max-width: 900px;
+  margin: 2rem auto;
+  
+  color: #fff;
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.contact-section h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+.contact-subtitle {
+  color: #bdbdbd;
+  text-align: center;
+  font-size: 1.08rem;
+  margin-bottom: 2.2rem;
+}
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-row {
+  display: flex;
+  gap: 1.2rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: #232526;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em 1.2em;
+  color: #fff;
+  font-size: 1.08em;
+  flex: 1;
+  outline: none;
+  transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px #0003;
+  margin-bottom: 0;
+}
+.contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid #ff8000;
+  box-shadow: 0 0 0 2px #ff8000aa;
+}
+.contact-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-form .btn-primary {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #ff8000;
+  border-radius: 8px;
+  padding: 0.7em 2.2em;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(255,128,0,0.1);
+}
+.contact-form .btn-primary:hover {
+  background: #ff8000;
+  color: #fff;
+}
