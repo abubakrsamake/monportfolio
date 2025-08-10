@@ -4,11 +4,11 @@ import { projectsData } from "../data/projectsData";
 
 
 const categories = [
-  { label: "All", value: "all" },
-  { label: "Website Design", value: "website" },
-  { label: "App Mobile Design", value: "mobile" },
-  { label: "App Desktop", value: "desktop" },
-  { label: "Branding", value: "branding" }
+  { label: "Tous", value: "all" },
+  { label: "Sites Web", value: "website" },
+  { label: "Applications Mobiles", value: "mobile" },
+  { label: "Applications Desktop", value: "desktop" },
+  { label: "Backend/API", value: "backend" }
 ];
 
 
@@ -41,10 +41,25 @@ function Portfolio() {
           <div className="portfolio-card" key={project.id}>
             <div className="portfolio-img-wrap">
               <img src={project.image} alt={project.name} className="portfolio-img" />
+              <div className="portfolio-overlay">
+                <div className="portfolio-links">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                    GitHub
+                  </a>
+                  <a href={project.demo} className="portfolio-link">
+                    Demo
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="portfolio-card-info">
               <div className="portfolio-card-title">{project.name}</div>
-              <div className="portfolio-card-category">Categories</div>
+              <div className="portfolio-card-description">{project.description}</div>
+              <div className="portfolio-technologies">
+                {project.technologies && project.technologies.map((tech, index) => (
+                  <span key={index} className="tech-tag">{tech}</span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

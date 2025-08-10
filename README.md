@@ -1,12 +1,46 @@
-# React + Vite
+# Portfolio Abu'bakr Samké
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Développeur Full-Stack Web, Mobile & Desktop
 
-Currently, two official plugins are available:
+Portfolio personnel moderne développé avec React + Vite, présentant mes compétences et projets en développement full-stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🛠️ Technologies utilisées
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18, Vite, CSS3
+- **UI/UX**: React Icons, React Fast Marquee
+- **Outils**: ESLint, Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📋 Fonctionnalités
+
+- ✅ Design responsive et moderne
+- ✅ Navigation fluide entre les sections
+- ✅ Galerie de projets avec filtrage
+- ✅ Formulaire de contact interactif
+- ✅ Affichage dynamique des compétences
+- ✅ Thème sombre/clair
+
+### 🚀 Installation et lancement
+
+```bash
+# Cloner le repository
+git clone https://github.com/abubakrsamake/myportofolio.git
+
+# Installer les dépendances
+npm install
+
+# Lancer en mode développement
+npm run dev
+
+# Build pour la production
+npm run build
+```
+
+### 📞 Contact
+
+- **GitHub**: [abubakrsamake](https://github.com/abubakrsamake)
+- **LinkedIn**: [Abu'bakr Samké](https://www.linkedin.com/in/abubakr-samake-a6396036a)
+- **Email**: [Contactez-moi via le formulaire](./src/pages/Contact.jsx)
+
+---
+
+*Portfolio créé avec passion par Abu'bakr Samké - Développeur Full-Stack*

@@ -16,7 +16,7 @@ function About() {
             sur le back-end, en passant par le mobile (Android/iOS) et les applications desktop multiplateformes.
             Mon objectif : livrer des produits robustes, maintenables, et agréables à utiliser – que ce soit pour une startup, une entreprise, ou un projet personnel ambitieux.
           </p>
-          <a href="#" className="btn-primary about-cv-btn" download>Download CV</a>
+          <a href="/cv/CV_Abubakr_Samake.pdf" className="btn-primary about-cv-btn" download="CV_Abubakr_Samake.pdf">Télécharger CV</a>
         </div>
       </div>
       

@@ -8,13 +8,13 @@ import Contact from './pages/Contact'
 import Footer from "./compoment/Footer";
 import Header from "./compoment/Header";
 
-const pages = {
-  Home: <Home />,
+const getPages = (handleNavClick) => ({
+  Home: <Home onNavigate={handleNavClick} />,
   Services: <Services />,
   About: <About />,
   Portfolio: <Portfolio />,
   Contact: <Contact />,
-}
+})
 
 function App() {
   const [page, setPage] = useState('Home')
@@ -37,7 +37,7 @@ function App() {
         handleNavClick={handleNavClick}
       />
       <main>
-        {pages[page]}
+        {getPages(handleNavClick)[page]}
       </main>
       <Footer />
     </div>

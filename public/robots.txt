@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://abubakrsamake.dev/sitemap.xml
+
+# Disallow sensitive files
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /vite.config.js
+Disallow: /eslint.config.js
+
+# Allow important files
+Allow: /cv/
+Allow: /images/
+Allow: /assets/

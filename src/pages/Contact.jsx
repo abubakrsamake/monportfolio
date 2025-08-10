@@ -16,8 +16,40 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: handle form submission (API or email)
-    alert("Message sent! (simulation)");
+    
+    // Validation basique
+    if (!form.name || !form.email || !form.service || !form.details) {
+      alert("Veuillez remplir tous les champs obligatoires.");
+      return;
+    }
+    
+    // Création du lien mailto avec les données du formulaire
+    const subject = encodeURIComponent(`Demande de ${form.service} - ${form.name}`);
+    const body = encodeURIComponent(
+      `Bonjour Abu'bakr,\n\n` +
+      `Je vous contacte concernant : ${form.service}\n\n` +
+      `Nom : ${form.name}\n` +
+      `Email : ${form.email}\n` +
+      `Téléphone : ${form.phone || 'Non renseigné'}\n` +
+      `Timeline : ${form.timeline || 'À discuter'}\n\n` +
+      `Détails du projet :\n${form.details}\n\n` +
+      `Cordialement,\n${form.name}`
+    );
+    
+    // Ouverture du client email
+    window.location.href = `mailto:contact@abubakrsamake.dev?subject=${subject}&body=${body}`;
+    
+    // Reset du formulaire
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      timeline: "",
+      details: ""
+    });
+    
+    alert("Votre client email va s'ouvrir avec le message pré-rempli !");
   };
 
   return (
