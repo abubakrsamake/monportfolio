@@ -12,7 +12,8 @@ function Header({ isMenuOpen, toggleMenu, page, handleNavClick }) {
       <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
         <a href="#" className={page === 'Home' ? 'active' : ''} onClick={() => handleNavClick('Home')}>Home</a>
         <a href="#" className={page === 'Services' ? 'active' : ''} onClick={() => handleNavClick('Services')}>Services</a>
-        <a href="#" className={page === 'About' ? 'active' : ''} onClick={() => handleNavClick('About')}>About me</a>
+        <a href="#" className={page === 'About' ? 'active' : ''} onClick={() => handleNavClick('About')}>A Propos</a>
+
         <a href="#" className={page === 'Portfolio' ? 'active' : ''} onClick={() => handleNavClick('Portfolio')}>Portfolio</a>
         <a href="#" className={page === 'Contact' ? 'active' : ''} onClick={() => handleNavClick('Contact')}>Contactez Moi</a>
       </nav>

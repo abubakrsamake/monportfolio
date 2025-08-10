@@ -1,5 +1,5 @@
 import Skills from '../compoment/Skills';
-import '../css/about.css'
+import '../css/About.css'
 function About() {
   return (
     <section className="about-section">
