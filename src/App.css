@@ -718,18 +718,25 @@ body {
   }
   
   .about-section {
-    padding: 1rem 0.3rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .about-content-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   
   .about-photo-bg {
-    min-width: 200px;
-    min-height: 280px;
-    padding: 0.8rem;
+    min-width: 180px;
+    min-height: 240px;
+    padding: 0.5rem;
+    margin: 0 auto;
   }
   
   .about-photo {
-    width: 160px;
-    height: 240px;
+    width: 140px;
+    height: 200px;
   }
   
   .portfolio-section {

@@ -33,7 +33,7 @@ function Home({ onNavigate }) {
           </div>
         </div>
         <div className="profile-photo">
-          <img src="" alt="Avatar Abu bakr Samake" className="profile-avatar" />
+          <img src="/images/banner-img.png" alt="Avatar Abu bakr Samake" className="profile-avatar" />
         </div>
       </div>
     </section>
