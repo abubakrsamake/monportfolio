@@ -71,6 +71,8 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
+import fastapi from '../assets/svg/skills/fastapi.svg'
+import sqlite from '../assets/svg/skills/sqlite.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
@@ -228,6 +230,10 @@ export const skillsImage = (skill) => {
             return unity;
         case 'wolframalpha':
             return wolframalpha;
+        case 'fastapi':
+            return fastapi;
+        case 'sqlite':
+            return sqlite;
         case 'canva':
             return canva;
         default:

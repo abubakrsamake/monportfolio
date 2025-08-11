@@ -24,7 +24,7 @@ function Home({ onNavigate }) {
           </div>
           <div className="cta-buttons">
             <button onClick={() => onNavigate && onNavigate('Contact')} className="btn-primary">Contactez Moi</button>
-            <a href="/cv/CV_Abubakr_Samake.pdf" className="btn-secondary" download="CV_Abubakr_Samake.pdf">Télécharger CV</a>
+            <a href="/cv/Cv_Abubakr_Samake.pdf" className="btn-secondary" download="Cv_Abubakr_Samake.pdf">Télécharger CV</a>
           </div>
           <div className="stats-row">
             <div className="stat-box"><span className="stat-value">5+</span><span className="stat-label">Expériences</span></div>
@@ -33,7 +33,7 @@ function Home({ onNavigate }) {
           </div>
         </div>
         <div className="profile-photo">
-          <img src="/src/images/banner-img.png" alt="Avatar Mahmood Fazile" className="profile-avatar" />
+          <img src="" alt="Avatar Abu bakr Samake" className="profile-avatar" />
         </div>
       </div>
     </section>

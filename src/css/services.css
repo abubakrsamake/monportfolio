@@ -58,3 +58,70 @@
   font-size: 1rem;
   text-align: center;
 }
+
+/* Media queries pour très petits écrans (400px) */
+@media (max-width: 400px) {
+  .services-section {
+    padding: 1.5rem 0.5rem;
+    margin: 1rem 0.2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    max-width: 100%;
+  }
+  
+  .service-card {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+  
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media queries pour écrans moyens (600px) */
+@media (max-width: 600px) and (min-width: 401px) {
+  .services-section {
+    padding: 2rem 1rem;
+    margin: 1.5rem 0.5rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1.8rem 1.2rem;
+    border-radius: 15px;
+  }
+  
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.1rem;
+  }
+  
+  .service-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .service-desc {
+    font-size: 0.95rem;
+  }
+}
