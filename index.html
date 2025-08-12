@@ -7,13 +7,13 @@
     
     <!-- SEO Meta Tags -->
     <title>Abu'bakr Samké - Développeur Full-Stack | Portfolio</title>
-    <meta name="description" content="Portfolio d'Abu'bakr Samké, développeur full-stack spécialisé en React, Node.js, React Native. Création d'applications web, mobiles et desktop." />
+    <meta name="description" content="Portfolio d'Abu'bakr Samaké, développeur full-stack spécialisé en React, Node.js, React Native. Création d'applications web, mobiles et desktop." />
     <meta name="keywords" content="développeur full-stack, React, Node.js, React Native, JavaScript, TypeScript, portfolio, Abu'bakr Samké" />
-    <meta name="author" content="Abu'bakr Samké" />
+    <meta name="author" content="Abu'bakr Samaké" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Abu'bakr Samké - Développeur Full-Stack" />
-    <meta property="og:description" content="Portfolio d'Abu'bakr Samké, développeur full-stack spécialisé en React, Node.js, React Native" />
+    <meta property="og:title" content="Abu'bakr Samaké - Développeur Full-Stack" />
+    <meta property="og:description" content="Portfolio d'Abu'bakr Samaké, développeur full-stack spécialisé en React, Node.js, React Native" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://abubakrsamake.dev" />
     <meta property="og:image" content="/images/banner-img.png" />
@@ -33,6 +33,20 @@
   </head>
   <body>
     <div id="root"></div>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <select name="service">
+        <option value="web">Web Development</option>
+        <option value="uiux">UI/UX Design</option>
+        <option value="video">Application mobile</option>
+        <option value="other">Autre</option>
+      </select>
+      <input type="text" name="timeline" />
+      <textarea name="details"></textarea>
+    </form>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+// src/pages/Contact.jsx
 import React, { useState } from "react";
 import '../css/contact.css';
 
@@ -15,48 +16,10 @@ function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Validation basique
-    if (!form.name || !form.email || !form.service || !form.details) {
-      alert("Veuillez remplir tous les champs obligatoires.");
-      return;
-    }
-    
-    // Création du lien mailto avec les données du formulaire
-    const subject = encodeURIComponent(`Demande de ${form.service} - ${form.name}`);
-    const body = encodeURIComponent(
-      `Bonjour Abu'bakr,\n\n` +
-      `Je vous contacte concernant : ${form.service}\n\n` +
-      `Nom : ${form.name}\n` +
-      `Email : ${form.email}\n` +
-      `Téléphone : ${form.phone || 'Non renseigné'}\n` +
-      `Timeline : ${form.timeline || 'À discuter'}\n\n` +
-      `Détails du projet :\n${form.details}\n\n` +
-      `Cordialement,\n${form.name}`
-    );
-    
-    // Ouverture du client email
-    window.location.href = `mailto:samakeabubak3@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Reset du formulaire
-    setForm({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      timeline: "",
-      details: ""
-    });
-    
-    alert("Votre client email va s'ouvrir avec le message pré-rempli !");
-  };
-
   return (
-    <section className="contact-section inspired-layout">
-      <h2>Contact me</h2>
-      <p className="contact-subtitle">Cultivating Connections: Reach Out And Connect With Me</p>
+    <section className="contact-section">
+      <h2>Contactez moi</h2>
+      <p className="contact-subtitle">Un site, une app, une plateforme ? Je code vos ambitions.</p>
 
       <form
         className="contact-form"
@@ -64,15 +27,14 @@ function Contact() {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
+        
       >
-        {/* Required hidden input for Netlify */}
+        {/* Obligatoire pour Netlify */}
         <input type="hidden" name="form-name" value="contact" />
-        <p className="hidden">
-          <label>
-            Ne pas remplir ce champ : <input name="bot-field" onChange={handleChange} />
-          </label>
+        <p hidden>
+          <label>Ne pas remplir ce champ : <input name="bot-field" /></label>
         </p>
+
         <div className="contact-row">
           <input
             type="text"
@@ -109,8 +71,8 @@ function Contact() {
             <option value="">Service Of Interest</option>
             <option value="web">Web Development</option>
             <option value="uiux">UI/UX Design</option>
-            <option value="video">App Design</option>
-            <option value="other">App Mobile</option>
+            <option value="video">Application mobile</option>
+            <option value="other">Autre</option>
           </select>
         </div>
 
