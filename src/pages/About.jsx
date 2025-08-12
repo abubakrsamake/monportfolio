@@ -7,7 +7,7 @@ function About() {
       <p className="about-subtitle">Développeur Full-Stack Web, Mobile & Desktop</p>
       <div className="about-content-row">
         <div className="about-photo-bg">
-          <img src="./images/about-img.png" alt="Profile" className="about-photo" />
+          <img src="/images/about-img.png" alt="Profile" className="about-photo" />
         </div>
         <div className="about-description">
           <p>

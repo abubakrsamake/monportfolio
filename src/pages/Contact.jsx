@@ -15,6 +15,44 @@ function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Validation basique
+    if (!form.name || !form.email || !form.service || !form.details) {
+      alert("Veuillez remplir tous les champs obligatoires.");
+      return;
+    }
+    
+    // Création du lien mailto avec les données du formulaire
+    const subject = encodeURIComponent(`Demande de ${form.service} - ${form.name}`);
+    const body = encodeURIComponent(
+      `Bonjour Abu'bakr,\n\n` +
+      `Je vous contacte concernant : ${form.service}\n\n` +
+      `Nom : ${form.name}\n` +
+      `Email : ${form.email}\n` +
+      `Téléphone : ${form.phone || 'Non renseigné'}\n` +
+      `Timeline : ${form.timeline || 'À discuter'}\n\n` +
+      `Détails du projet :\n${form.details}\n\n` +
+      `Cordialement,\n${form.name}`
+    );
+    
+    // Ouverture du client email
+    window.location.href = `mailto:samakeabubak3@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Reset du formulaire
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      timeline: "",
+      details: ""
+    });
+    
+    alert("Votre client email va s'ouvrir avec le message pré-rempli !");
+  };
+
   return (
     <section className="contact-section inspired-layout">
       <h2>Contact me</h2>
@@ -26,7 +64,7 @@ function Contact() {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        netlify
+        onSubmit={handleSubmit}
       >
         {/* Required hidden input for Netlify */}
         <input type="hidden" name="form-name" value="contact" />
